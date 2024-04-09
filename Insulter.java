@@ -2,7 +2,10 @@ public class Insulter
 {
     public static void main(String[] args)
     {
-        String randWord1 = get1stWord();
+        String [] wordList1 = {"artless", "bawdy", "beslubbering", "bootless", "churlish", "cockered", "clouted", "craven", "currish", "dankish", "dissembling"};
+        String [] wordList2 = {};
+        String [] wordList3 = {};
+        String randWord1 = getWord();
         String randWord2 = get2ndWord();
         String randWord3 = get3rdWord();
         System.out.println("Thou "+randWord1+" "+randWord2+" "+randWord3+"!");
@@ -28,38 +31,15 @@ public class Insulter
         int size = max - min + 1;
         return (int)(Math.random() * size)+min;
     }
-    public static String get1stWord()
+    public static String getWord(String[] list)
     {
         int min = 0;
         int max = 10;
-        int rand = random_range(min, max);
+        int rand = random_range(0, list.length);
         return get1stWord(rand);
     }
-    public static String get1stWord(int rand)
-    {
-        switch(rand)
-        {
-            case 0: return "artless";
-            case 1: return "bawdy";
-            case 2: return "beslubbering";
-            case 3: return "bootless";
-            case 4: return "churlish";
-            case 5: return "cockered";
-            case 6: return "clouted";
-            case 7: return "craven";
-            case 8: return "currish";
-            case 9: return "dankish";
-            case 10: return "dissembling";
-            default: return "Error!";
-        }
-    }
-    public static String get2ndWord()
-    {
-        int min = 0;
-        int max = 10;
-        int rand = random_range(min, max);
-        return get2ndWord(rand);
-    }
+    
+    
     public static String get2ndWord(int rand)
     {
         switch(rand)
