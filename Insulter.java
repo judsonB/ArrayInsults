@@ -3,7 +3,18 @@ public class Insulter
     public static void main(String[] args)
     {
         String [] wordList1 = {"artless", "bawdy", "beslubbering", "bootless", "churlish", "cockered", "clouted", "craven", "currish", "dankish", "dissembling"};
-        String [] wordList2 = {};
+        String [] wordList2 = {""0: return "base-court";
+            """bat-forling";
+            ""2: return "beef-witted";
+            ""3: return "beetle-headed";
+            ""4: return "boil-brained";
+            ""5: return "clapper-clawed";
+            ""6: return "clay-brained";
+            ""7: return "common-kissing";
+            ""8: return "crook-pated";
+            ""9: return "dismal-dreaming";
+            ""10: return "dizzy-eyed";
+            default: return "Error!";};
         String [] wordList3 = {};
         String randWord1 = getWord();
         String randWord2 = get2ndWord();
@@ -36,7 +47,7 @@ public class Insulter
         int min = 0;
         int max = 10;
         int rand = random_range(0, list.length);
-        return get1stWord(rand);
+        return list[rand];
     }
     
     
@@ -44,18 +55,7 @@ public class Insulter
     {
         switch(rand)
         {
-            case 0: return "base-court";
-            case 1: return "bat-forling";
-            case 2: return "beef-witted";
-            case 3: return "beetle-headed";
-            case 4: return "boil-brained";
-            case 5: return "clapper-clawed";
-            case 6: return "clay-brained";
-            case 7: return "common-kissing";
-            case 8: return "crook-pated";
-            case 9: return "dismal-dreaming";
-            case 10: return "dizzy-eyed";
-            default: return "Error!";
+            
         }
     }
     public static String get3rdWord()
